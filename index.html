@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Relatórios - SEAP</title>
+	<link rel="icon" type="imagem/png" href="./img/aposentadoria.png" />
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/opensans-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- datepicker -->
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css"/>
+	
+</head>
+<body id="conteudo">
+	<div class="page-content">
+		<div class="wizard-heading">Relatório de Abono de Permanência</div>
+		<div class="wizard-v6-content">
+			<div class="wizard-form">
+		        <form class="form-register" id="form-register" action="" method="post">
+		        	<div id="form-total">
+		        		<!-- SECTION 1 -->
+			            <h2>
+			            	<p class="step-icon"><span>1</span></p>
+			            	<span class="step-text">Informações pessoais</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="date" class="special-label">Assunto:</label>
+										<select required name="assunto" id="assunto" class="form-control">
+											<option value="" selected>Selecionar</option>
+											<option value="Abono de Permanência">Abono de Permanência</option>
+											<option value="Aposentadoria">Aposentadoria</option>
+											<option value="Pensão">Pensão</option>
+										</select>
+									</div>
+								</div>
+
+
+								<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="name" name="name" class="required">
+											<span class="label">Nome completo:</span>
+										</label>
+									</div>
+								</div>
+
+								<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="matricula_siape" name="matricula_siape" required>
+											<span class="label">Matrícula SIAPE:</span>
+										</label>
+									</div>
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="matricula_origem" name="matricula_origem" required>
+											<span class="label">Matrícula na origem:</span>
+										</label>
+									</div>
+								</div>
+
+								<div class="form-row">
+									<div class="form-holder">
+										<label class="form-row-inner">
+											<input type="text" class="form-control" id="cargo" name="cargo" required />
+											<span class="label">Cargo:</span>
+										</label>
+									</div>
+								</div>
+
+							
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="date" class="special-label">Sexo:</label>
+										<select name="sexo" id="sexo" class="form-control">
+											<option value="" selected>Selecionar</option>
+											<option value="masculino">Masculino</option>
+											<option value="feminino">Feminino</option>
+										</select>
+									</div>
+								</div>
+							</div>
+			            </section>
+						<!-- SECTION 2 -->
+			            <h2>
+			            	<p class="step-icon"><span>2</span></p>
+			            	<span class="step-text">Resultado</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="form-heading">
+			                		<h3>Resultado do pedido</h3>
+			                		<span>2/3</span>
+			                	</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="resultado" class="special-label-1">Resultado</label>
+										<select name="resultado" id="resultado" class="form-control">
+											<option value="" selected>Selecione</option>
+											<option value="deferido">DEFERIDO</option>
+											<option value="indeferido">INDEFERIDO</option>
+										</select>
+										<span class="select-btn">
+											<i class="zmdi zmdi-chevron-down"></i>
+										</span>
+									</div>
+								</div>
+								<div class="form-row" id="deferido">
+									<div class="form-holder">
+										<label for="day" class="special-label-1">Data da aquisição do direito:</label>
+										<input id="data" type="date" />
+									</div>
+									<div class="form-holder">
+										<label for="fundamento" class="special-label-1">Fundamento:</label>
+										<select name="fundamento" id="fundamento" class="form-control">
+											<option value="" selected>Selecione</option>
+											<option value="049006">049006 - Art. 2° I II III §1° II da EC 41-2003</option>
+											<option value="049008">049008 - Art. 6° I II III IV  da EC 41-2003</option>
+											<option value="049010">049010 - Art. 3º da EC 47-2005</option>
+											<option value="049021">049021 - Art. 4º §6° II da EC nº 103/2019</option>
+											<option value="049023">049023 - Art. 4º §6° I da EC nº 103/2019</option>
+											<option value="049027">049027 - Art. 10 §1° I da EC nº 103/2019</option>
+											<option value="049034">049034 - Art. 20 §2° I da EC nº 103/2019</option>
+											<option value="049036">049036 - Art. 20 §2° II da EC nº 103/2019</option>
+										</select>
+										<span class="select-btn">
+											<i class="zmdi zmdi-chevron-down"></i>
+										</span>
+									</div>
+								</div>
+								<div class="form-row" id="indeferido">
+									<div class="form-holder">
+										<label for="estimativa" class="special-label-1">Data estimada da aquisição do direito:</label>
+										<input id="estimativa" type="date" />
+									</div>
+									<div class="form-holder">
+										<label for="fundamento_indeferido" class="special-label-1">Fundamento:</label>
+										<select name="fundamento_indeferido" id="fundamento_indeferido" class="form-control">
+											<option value="" selected>Selecione</option>
+											<option value="art. 4 §6° II da EC nº 103/2019">049021 - Art. 4 §6° II da EC nº 103/2019</option>
+											<option value="art. 4 §6° I da EC nº 103/2019">048023 - Art. 4 §6° I da EC nº 103/2019</option>
+											<option value="art. 10 §1° I da EC nº 103/2019">049027 - Art. 10 §1° I da EC nº 103/2019</option>
+											<option value="art. 20 §2° I da EC nº 103/2019">049034 - Art. 20 §2° I da EC nº 103/2019</option>
+											<option value="art. 20 §2° II da EC nº 103/2019">049036 - Art. 20 §2° II da EC nº 103/2019</option>
+										</select>
+										<span class="select-btn">
+											<i class="zmdi zmdi-chevron-down"></i>
+										</span>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<label for="assinante" class="special-label-1">Assinante do relatório:</label>
+										<select name="assinante" id="assinante" class="form-control">
+											<option value="" selected>Selecione</option>
+											<option value="Coordenadora de Administração de Pessoal">Coordenadora de Administração de Pessoal</option>
+											<option value="Coordenador de Administração de Pessoal">Coordenador de Administração de Pessoal</option>
+											<option value="Coordenadora de Administração de Pessoal em exercício">Coordenadora de Administração de Pessoal em exercício</option>
+											<option value="Coordenador de Administração de Pessoal em exercício">Coordenador de Administração de Pessoal em exercício</option>
+										</select>
+										<span class="select-btn">
+											<i class="zmdi zmdi-chevron-down"></i>
+										</span>
+									</div>
+								</div>
+							</div>
+			            </section>
+			            <!-- SECTION 3 -->
+			            <h2>
+			            	<p class="step-icon"><span>3</span></p>
+			            	<span class="step-text">Revisão</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="form-heading">
+			                		<h3></h3>
+			                		<span>3/3</span>
+			                	</div>
+								<div class="table-responsive">
+									<table class="table">
+										<tbody>
+											<tr class="space-row">
+												<th>Assunto:</th>
+												<td id="assunto-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Nome completo:</th>
+												<td id="fullname-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Matrícula SIAPE:</th>
+												<td id="matricula_siape-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Matrícula na Origem:</th>
+												<td id="matricula_origem-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Cargo:</th>
+												<td id="cargo-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Sexo:</th>
+												<td id="sexo-val"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<hr>
+								<div class="table-responsive">
+									<table class="table">
+										<tbody id="deferido_result">
+											<tr class="space-row">
+												<th>RESULTADO:</th>
+												<td style="text-transform: uppercase;"id="resultado-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Data:</th>
+												<td id="data-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Fundamento:</th>
+												<td id="fundamento-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Assinante:</th>
+												<td id="assinante__def-val"></td>
+											</tr>
+										</tbody>
+										<tbody id="indeferido_result">
+											<tr class="space-row">
+												<th>RESULTADO:</th>
+												<td style="text-transform: uppercase;"id="result-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Data estimada:</th>
+												<td id="estimativa-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Fundamento:</th>
+												<td id="fundamento_indeferido-val"></td>
+											</tr>
+											<tr class="space-row">
+												<th>Assinante:</th>
+												<td id="assinante__indef-val"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+			            </section>
+		        	</div>
+		        </form>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/jquery.steps.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
