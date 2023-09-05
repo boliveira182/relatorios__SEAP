@@ -1,0 +1,178 @@
+.texto{
+    padding: 50px;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+}
+
+.cabecalho__info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    font-size: 15px;
+}
+
+hr {
+    width: 100%;
+    text-align: center; /* Para o IE */
+    margin: 0 auto 0 0; /* Para navegadores standard */
+    border: 1px solid; 
+    border-color: rgb(33, 151, 33);
+}
+
+
+p{
+    text-indent: 1.5em;
+}
+#titulo{
+    margin-top: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.servidor{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 10px;
+}
+
+.servidor__item{
+    font-weight: bold;
+}
+
+.texto__relatorio{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    line-height: 2;
+}
+
+blockquote {border-left:#009900 5px double;
+    margin-left: 50px;
+    margin-right: 40px;
+    background:#f0fff0;
+    color:#006600;
+    padding-left:15px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.texto__relatorio__titulo{
+    margin-left: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.message:first-letter {
+    text-transform: uppercase!important;
+}
+
+#data{
+    float: right;
+}
+
+.assinatura{
+    margin-top: 110px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+}
+.botoes__ajuste{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    
+}
+
+.cursor{
+    cursor: pointer;
+}
+#converter {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #alterar {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #voltar {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #inicio {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+ .config{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: 50%;
+    gap:20px;
+ }
+
+.ajuste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 20px;
+    border: solid;
+    padding: 10px;
+    width: 20%;
+    margin-left: 15%;
+}
