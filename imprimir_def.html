@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/limpaCSS.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./css/imprimir.css" media="screen" />
+
+    
+    <title>Relatórios - SEAP</title>
+	<link rel="icon" type="imagem/png" href="./img/aposentadoria.png" />
+    
+</head>
+<body>
+
+    <article id="texto" class="texto">
+        <header class="cabecalho">
+            <img id="logo" class="cabecalho__logo" src="./img/logo.ong.png" width="200">
+            <div id="cabecalho__info" class="cabecalho__info">
+                <p><strong>UNIVERSIDADE FEDERAL DE LAVRAS</strong></p>
+                <p><strong>Pró-Reitoria de Gestão de Pessoas - PROGEPE</strong></p>
+                <p>Coordenadoria Administração de Pessoal - CAPE</p>
+                <p>Setor de Aposentadorias e Pensões - SEAP</p>
+            </div>
+        </header>
+        <br/>
+        <hr>
+        <br/>
+        <h1 id="titulo">Relatório para Concessão de Abono de Permanência<h1>
+
+        <div id="servidor" class="servidor">
+            <p class="servidor__item">Assunto: <span id="assunto"></span></p>
+            <p class="servidor__item"><span class ="pronome"></span>: <span class="nomeUsuario"></span></p>
+            <p class="servidor__item">Matrícula SIAPE: <span id="siapeUsuario"></span></p>
+            <p class="servidor__item">Matrícula na origem: <span id="origemUsuario"></span></p>
+            <p class="servidor__item">Cargo: <span id="cargoUsuario"></span></p>
+        </div>
+
+        <div id="texto__relatorio" class="texto__relatorio">
+            <p>O presente relatório versa sobre a análise para a concessão do benefício Abono de Permanência, com base no que prevê o §19 do artigo 40 da Constituição Federal, o Art. 3º, §3º, Art. 8º e Art. 10, §5º da Emenda Constitucional nº 103, de 12/11/2019, transcritos abaixo:</p>
+
+            <h2 class="texto__relatorio__titulo">●	Constituição Federal de 1988</h2>
+            <blockquote>
+                <p><strong>Art. 40.</strong>O regime próprio de previdência social dos servidores titulares de cargos efetivos terá caráter contributivo e solidário, mediante contribuição do respectivo ente federativo, de servidores ativos, de aposentados e de pensionistas, observados critérios que preservem o equilíbrio financeiro e atuarial. (Redação dada pela Emenda Constitucional nº 103, de 2019).</p>
+                <p>[...]</p>
+                <p><strong>§ 19.</strong>Observados critérios a serem estabelecidos em lei do respectivo ente federativo, o servidor titular de cargo efetivo que tenha completado as exigências para a aposentadoria voluntária e que opte por permanecer em atividade poderá fazer jus a um abono de permanência equivalente, no máximo, ao valor da sua contribuição previdenciária, até completar a idade para aposentadoria compulsória. <a href="https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc103.htm">(Redação dada pela Emenda Constitucional nº 103, de 2019).</a></p>
+                <p>[...]</p>
+            </blockquote>
+
+            <h2 class="texto__relatorio__titulo">●	Emenda Constitucional nº 103/2019</h2>
+            <blockquote>
+                <p><strong>Art. 3º.</strong>A concessão de aposentadoria ao servidor público federal vinculado a regime próprio de previdência social e ao segurado do Regime Geral de Previdência Social e de pensão por morte aos respectivos dependentes será assegurada, a qualquer tempo, desde que tenham sido cumpridos os requisitos para obtenção desses benefícios até a data de entrada em vigor desta Emenda Constitucional, observados os critérios da legislação vigente na data em que foram atendidos os requisitos para a concessão da aposentadoria ou da pensão por morte.</p>
+                <p>[...]</p>
+                <p><strong>§ 3º.</strong>Até que entre em vigor lei federal de que trata o § 19 do art. 40 da Constituição Federal, o servidor de que trata o caput que tenha cumprido os requisitos para aposentadoria voluntária com base no disposto na alínea "a" do inciso III do § 1º do art. 40 da Constituição Federal, na redação vigente até a data de entrada em vigor desta Emenda Constitucional, no art. 2º, no § 1º do art. 3º ou no art. 6º da Emenda Constitucional nº 41, de 19 de dezembro de 2003, ou no art. 3º da Emenda Constitucional nº 47, de 5 de julho de 2005, que optar por permanecer em atividade fará jus a um abono de permanência equivalente ao valor da sua contribuição previdenciária, até completar a idade para aposentadoria compulsória.</p>
+                <p>[...]</p>
+                <p><strong>Art. 8º.</strong>Até que entre em vigor lei federal de que trata o § 19 do art. 40 da Constituição Federal, o servidor público federal que cumprir as exigências para a concessão da aposentadoria voluntária nos termos do disposto nos arts. 4º, 5º, 20, 21 e 22 e que optar por permanecer em atividade fará jus a um abono de permanência equivalente ao valor da sua contribuição previdenciária, até completar a idade para aposentadoria compulsória.</p>
+                <p>[...]</p>
+                <p><strong>Art. 10.</strong>Até que entre em vigor lei federal que discipline os benefícios do regime próprio de previdência social dos servidores da União, aplica-se o disposto neste artigo.</p>
+                <p>[...]</p>
+                <p><strong>§ 5º.</strong>Até que entre em vigor lei federal de que trata o § 19 do art. 40 da Constituição Federal, o servidor federal que cumprir as exigências para a concessão da aposentadoria voluntária nos termos do disposto neste artigo e que optar por permanecer em atividade fará jus a um abono de permanência equivalente ao valor da sua contribuição previdenciária, até completar a idade para aposentadoria compulsória.</p>
+                <p>[...]</p>
+            </blockquote>
+
+            <br>
+            <p>De acordo com consulta realizada ao Sistema Integrado de Administração de Recursos Humanos (Siape), cujas telas compõem este processo, constatou-se que <strong><spam class="pronome"></spam> <spam class="nomeUsuario"></spam></strong> integralizou os requisitos exigidos para aposentadoria voluntária com fundamento no <strong><spam id="fundamento"></spam></strong>, como segue:</p>
+            
+            <div id="049006">
+                <h2 class="texto__relatorio__titulo">●	Emenda Constitucional n°103/2019</h2>
+                <blockquote>
+                    <p><strong>Art. 3º.</strong>A concessão de aposentadoria ao servidor público federal vinculado a regime próprio de previdência social e ao segurado do Regime Geral de Previdência Social e de pensão por morte aos respectivos dependentes será assegurada, a qualquer tempo, desde que tenham sido cumpridos os requisitos para obtenção desses benefícios até a data de entrada em vigor desta Emenda Constitucional, observados os critérios da legislação vigente na data em que foram atendidos os requisitos para a concessão da aposentadoria ou da pensão por morte.</p>
+                </blockquote>
+
+                <h2 class="texto__relatorio__titulo">●	Emenda Constitucional n°41/2003</h2>
+                <blockquote >
+                    <p><strong>Art. 2º.</strong>Observado o disposto no art. 4º da Emenda Constitucional nº 20, de 15 de dezembro de 1998, é assegurado o direito de opção pela aposentadoria voluntária com proventos calculados de acordo com o art. 40, §§ 3º e 17, da Constituição Federal, àquele que tenha ingressado regularmente em cargo efetivo na Administração Pública direta, autárquica e fundacional, até a data de publicação daquela Emenda, quando o servidor, cumulativamente:</p>
+                    <p>I - tiver cinquenta e três anos de idade, se homem, e quarenta e oito anos de idade, se mulher;</p>
+                    <p>II - tiver cinco anos de efetivo exercício no cargo em que se der a aposentadoria;</p>
+                    <p> a) - trinta e cinco anos, se homem, e trinta anos, se mulher; e</p>
+                    <p> § 1º - O servidor de que trata este artigo que cumprir as exigências para aposentadoria na forma do caput terá os seus proventos de inatividade reduzidos para cada ano antecipado em relação aos limites de idade estabelecidos pelo art. 40, § 1º, III, a, e § 5º da Constituição Federal, na seguinte proporção:</p>
+                    <p> I - três inteiros e cinco décimos por cento, para aquele que completar as exigências para aposentadoria na forma do caput até 31 de dezembro de 2005;</p>
+                    <p> II - cinco por cento, para aquele que completar as exigências para aposentadoria na forma do caput a partir de 1º de janeiro de 2006.</p>
+                </blockquote>
+            </div>
+            <div id="049008">
+                <h2 class="texto__relatorio__titulo">●	Emenda Constitucional n°103/2019</h2>
+                <blockquote>
+                    <p><strong>Art. 3º.</strong>A concessão de aposentadoria ao servidor público federal vinculado a regime próprio de previdência social e ao segurado do Regime Geral de Previdência Social e de pensão por morte aos respectivos dependentes será assegurada, a qualquer tempo, desde que tenham sido cumpridos os requisitos para obtenção desses benefícios até a data de entrada em vigor desta Emenda Constitucional, observados os critérios da legislação vigente na data em que foram atendidos os requisitos para a concessão da aposentadoria ou da pensão por morte.</p>
+                </blockquote>
+
+                <h2 class="texto__relatorio__titulo">●	Emenda Constitucional n°41/2003</h2>
+                <blockquote >
+                    <p><strong>Art. 6º.</strong>Ressalvado o direito de opção à aposentadoria pelas normas estabelecidas pelo art. 40 da Constituição Federal ou pelas regras estabelecidas pelo art. 2º desta Emenda, o servidor da União, dos Estados, do Distrito Federal e dos Municípios, incluídas suas autarquias e fundações, que tenha ingressado no serviço público até a data de publicação desta Emenda poderá aposentar-se com proventos integrais, que corresponderão à totalidade da remuneração do servidor no cargo efetivo em que se der a aposentadoria, na forma da lei, quando, observadas as reduções de idade e tempo de contribuição contidas no § 5º do art. 40 da Constituição Federal, vier a preencher, cumulativamente, as seguintes condições:</p>
+                    <p>I - sessenta anos de idade, se homem, e cinqüenta e cinco anos de idade, se mulher;</p>
+                    <p>II - trinta e cinco anos de contribuição, se homem, e trinta anos de contribuição, se mulher;</p>
+                    <p>III - vinte anos de efetivo exercício no serviço público; e</p>
+                    <p>IV - dez anos de carreira e cinco anos de efetivo exercício no cargo em que se der a aposentadoria.</p>
+                </blockquote>
+            </div>
+            <div id="049010">
+                <h2 class="texto__relatorio__titulo">●	Emenda Constitucional n°103/2019</h2>
+                <blockquote>
+                    <p><strong>Art. 3º.</strong>A concessão de aposentadoria ao servidor público federal vinculado a regime próprio de previdência social e ao segurado do Regime Geral de Previdência Social e de pensão por morte aos respectivos dependentes será assegurada, a qualquer tempo, desde que tenham sido cumpridos os requisitos para obtenção desses benefícios até a data de entrada em vigor desta Emenda Constitucional, observados os critérios da legislação vigente na data em que foram atendidos os requisitos para a concessão da aposentadoria ou da pensão por morte.</p>
+                </blockquote>
+
+                <h2 class="texto__relatorio__titulo">●	Emenda Constitucional n°47/2005</h2>
+                <blockquote >
+                    <p><strong>Art. 3º.</strong>Ressalvado o direito de opção à aposentadoria pelas normas estabelecidas pelo art. 40 da Constituição Federal ou pelas regras estabelecidas pelos arts. 2º e 6º da Emenda Constitucional nº 41, de 2003, o servidor da União, dos Estados, do Distrito Federal e dos Municípios, incluídas suas autarquias e fundações, que tenha ingressado no serviço público até 16 de dezembro de 1998 poderá aposentar-se com proventos integrais, desde que preencha, cumulativamente, as seguintes condições:</p>
+                    <p>I - trinta e cinco anos de contribuição, se homem, e trinta anos de contribuição, se mulher;</p>
+                    <p>II - vinte e cinco anos de efetivo exercício no serviço público, quinze anos de carreira e cinco anos no cargo em que se der a aposentadoria;</p>
+                    <p>III - idade mínima resultante da redução, relativamente aos limites do art. 40, § 1º, inciso III, alínea "a", da Constituição Federal, de um ano de idade para cada ano de contribuição que exceder a condição prevista no inciso I do caput deste artigo.</p>
+                    <p>Parágrafo único - Aplica-se ao valor dos proventos de aposentadorias concedidas com base neste artigo o disposto no art. 7º da Emenda Constitucional nº 41, de 2003, observando-se igual critério de revisão às pensões derivadas dos proventos de servidores falecidos que tenham se aposentado em conformidade com este artigo.</p>
+                </blockquote>
+            </div>
+            <div id="049021">
+                <h2 class="texto__relatorio__titulo">●	Emenda Constitucional n°103/2019</h2>
+                <blockquote >
+                    <p><strong>Art. 4º.</strong>O servidor público federal que tenha ingressado no serviço público em cargo efetivo até a data de entrada em vigor desta Emenda Constitucional poderá aposentar se voluntariamente quando preencher, cumulativamente, os seguintes requisitos:</p>
+                    <p>I - 56 (cinquenta e seis) anos de idade, se mulher, e 61 (sessenta e um) anos de idade, se homem, observado o disposto no § 1º;</p>
+                    <p>II - 30 (trinta) anos de contribuição, se mulher, e 35 (trinta e cinco) anos de contribuição, se homem;</p>
+                    <p>III - 20 (vinte) anos de efetivo exercício no serviço público;</p>
+                    <p>V - somatório da idade e do tempo de contribuição, incluídas as frações, equivalente a 86 (oitenta e seis) pontos, se mulher, e 96 (noventa e seis) pontos, se homem, observado o disposto nos §§ 2º e 3º.</p>
+                    <p>[...]</p>
+                    <p>§ 6º. Os proventos das aposentadorias concedidas nos termos do disposto neste artigo corresponderão:</p>
+                    <p>I - à totalidade da remuneração do servidor público no cargo efetivo em que se der a aposentadoria, observado o disposto no § 8º, para o servidor público que tenha ingressado no serviço público em cargo efetivo até 31 de dezembro de 2003 e que não tenha feito a opção de que trata o § 16 do art. 40 da Constituição Federal, desde que tenha, no mínimo, 62 (sessenta e dois) anos de idade, se mulher, e 65 (sessenta e cinco) anos de idade, se homem, ou, para os titulares do cargo de professor de que trata o § 4º, 57 (cinquenta e sete) anos de idade, se mulher, e 60 (sessenta) anos de idade, se homem;/p>
+                    <p>II - ao valor apurado na forma da lei, para o servidor público não contemplado no inciso I.</p>
+                </blockquote>
+            </div>
+            <div id="049023">
+                <h2 class="texto__relatorio__titulo">●	Emenda Constitucional n°103/2019</h2>
+                <blockquote >
+                    <p><strong>Art. 4º.</strong>O servidor público federal que tenha ingressado no serviço público em cargo efetivo até a data de entrada em vigor desta Emenda Constitucional poderá aposentar se voluntariamente quando preencher, cumulativamente, os seguintes requisitos:</p>
+                    <p>I - 56 (cinquenta e seis) anos de idade, se mulher, e 61 (sessenta e um) anos de idade, se homem, observado o disposto no § 1º;</p>
+                    <p>II - 30 (trinta) anos de contribuição, se mulher, e 35 (trinta e cinco) anos de contribuição, se homem;</p>
+                    <p>III - 20 (vinte) anos de efetivo exercício no serviço público;</p>
+                    <p>V - somatório da idade e do tempo de contribuição, incluídas as frações, equivalente a 86 (oitenta e seis) pontos, se mulher, e 96 (noventa e seis) pontos, se homem, observado o disposto nos §§ 2º e 3º.</p>
+                    <p>[...]</p>
+                    <p>§ 6º. Os proventos das aposentadorias concedidas nos termos do disposto neste artigo corresponderão:</p>
+                    <p>I - à totalidade da remuneração do servidor público no cargo efetivo em que se der a aposentadoria, observado o disposto no § 8º, para o servidor público que tenha ingressado no serviço público em cargo efetivo até 31 de dezembro de 2003 e que não tenha feito a opção de que trata o § 16 do art. 40 da Constituição Federal, desde que tenha, no mínimo, 62 (sessenta e dois) anos de idade, se mulher, e 65 (sessenta e cinco) anos de idade, se homem, ou, para os titulares do cargo de professor de que trata o § 4º, 57 (cinquenta e sete) anos de idade, se mulher, e 60 (sessenta) anos de idade, se homem;/p>
+                    <p>[...]</p>
+                </blockquote>
+            </div>
+            <div id="049027">
+                <h2 class="texto__relatorio__titulo">●	Emenda Constitucional n°103/2019</h2>
+                <blockquote >
+                    <p><strong>Art. 10.</strong>Até que entre em vigor lei federal que discipline os benefícios do regime próprio de previdência social dos servidores da União, aplica-se o disposto neste artigo.</p>
+                    <p>§1º -Os servidores públicos federais serão aposentados:</p>
+                    <p>I - voluntariamente, observados, cumulativamente, os seguintes requisitos:</p>
+                    <p>a) - 62 (sessenta e dois) anos de idade, se mulher, e 65 (sessenta e cinco) anos de idade, se homem; e</p>
+                    <p>b) - 25 (vinte e cinco) anos de contribuição, desde que cumprido o tempo mínimo de 10 (dez) anos de efetivo exercício no serviço público e de 5 (cinco) anos no cargo efetivo em que for concedida a aposentadoria</p>
+                </blockquote>
+            </div>
+            <div id="049034">
+                <h2 class="texto__relatorio__titulo">●	Emenda Constitucional n°103/2019</h2>
+                <blockquote >
+                    <p><strong>Art. 20.</strong>O segurado ou o servidor público federal que se tenha filiado ao Regime Geral de Previdência Social ou ingressado no serviço público em cargo efetivo até a data de entrada em vigor desta Emenda Constitucional poderá aposentar-se voluntariamente quando preencher, cumulativamente, os seguintes requisitos:</p>
+                    <p>I - 57 (cinquenta e sete) anos de idade, se mulher, e 60 (sessenta) anos de idade, se homem;</p>
+                    <p>II - 30 (trinta) anos de contribuição, se mulher, e 35 (trinta e cinco) anos de contribuição, se homem;</p>
+                    <p>III - para os servidores públicos, 20 (vinte) anos de efetivo exercício no serviço público e 5 (cinco) anos no cargo efetivo em que se der a aposentadoria;</p>
+                    <p>IV - período adicional de contribuição correspondente ao tempo que, na data de entrada em vigor desta Emenda Constitucional, faltaria para atingir o tempo mínimo de contribuição referido no inciso II.</p>
+                    <p>[...]</p>
+                    <p>§2º -  valor das aposentadorias concedidas nos termos do disposto neste artigo corresponderá:</p>
+                    <p>I - em relação ao servidor público que tenha ingressado no serviço público em cargo efetivo até 31 de dezembro de 2003 e que não tenha feito a opção de que trata o § 16 do art. 40 da Constituição Federal, à totalidade da remuneração no cargo efetivo em que se der a aposentadoria, observado o disposto no § 8º do art. 4º;</p>
+                    <p>[...]</p>
+                </blockquote>
+            </div>
+            <div id="049036">
+                <h2 class="texto__relatorio__titulo">●	Emenda Constitucional n°103/2019</h2>
+                <blockquote >
+                    <p><strong>Art. 20.</strong>O segurado ou o servidor público federal que se tenha filiado ao Regime Geral de Previdência Social ou ingressado no serviço público em cargo efetivo até a data de entrada em vigor desta Emenda Constitucional poderá aposentar-se voluntariamente quando preencher, cumulativamente, os seguintes requisitos:</p>
+                    <p>I - 57 (cinquenta e sete) anos de idade, se mulher, e 60 (sessenta) anos de idade, se homem;</p>
+                    <p>II - 30 (trinta) anos de contribuição, se mulher, e 35 (trinta e cinco) anos de contribuição, se homem;</p>
+                    <p>III - para os servidores públicos, 20 (vinte) anos de efetivo exercício no serviço público e 5 (cinco) anos no cargo efetivo em que se der a aposentadoria;</p>
+                    <p>IV - período adicional de contribuição correspondente ao tempo que, na data de entrada em vigor desta Emenda Constitucional, faltaria para atingir o tempo mínimo de contribuição referido no inciso II.</p>
+                    <p>[...]</p>
+                    <p>§2º -  valor das aposentadorias concedidas nos termos do disposto neste artigo corresponderá:</p>
+                    <p>[...]</p>
+                    <p>II - em relação aos demais servidores públicos e aos segurados do Regime Geral de Previdência Social, ao valor apurado na forma da lei.</p>
+                    <p>[...]</p>
+                </blockquote>
+            </div>
+            <br>
+            <p>Constatou-se também que <spam class="pronome"></spam> cumpriu os requisitos em <spam id="dataBeneficio"></spam> fazendo jus à concessão do Abono de Permanência com efeitos financeiros retroativos àquela data.</p>
+        </div>
+        <br>
+        <p id="data"> Lavras, <span id="data__atual"></span>
+
+        <div class="assinatura">
+            <p><spam id="assinatura"></spam> </p>
+        </div>
+
+    </article>
+
+    <div class="ajuste">
+        <p>Ajustar tamanho da fonte:</p>
+        <div class="botoes__ajuste">
+            <button  onclick="diminuir()" ><img class="cursor" src="./img/minus.png" alt="" width="30"></button>|
+            <button  onclick="aumentar()" ><img class="cursor" src="./img/plus.png" alt="" width="30"></button>
+        </div>
+    </div>
+
+
+    <div class="botoes">
+        <button style="margin-top: 80px;" onclick="history.go(-1);" id="voltar">Voltar</button>
+        <button style="margin-top: 80px;" onclick="makePDF()" id="converter">Imprimir</button>
+        <button style="margin-top: 80px;" onclick="inicio()" id="inicio">Início</button>
+    </div>
+
+    <script src="./js/imprimir.js"></script>
+
+    <!-- Include necessary scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+
+    <script>
+        tamanho = 20;
+        tamanho2 = 15;
+        img = 200;
+        function diminuir(){
+            img = img-10;
+            tamanho--;
+            tamanho2--;
+            document.getElementById("texto__relatorio").style.fontSize=tamanho+"px";
+            document.getElementById("data").style.fontSize=tamanho+"px";
+            document.getElementById("assinatura").style.fontSize=tamanho+"px";
+            document.getElementById("cabecalho__info").style.fontSize=tamanho2+"px";
+            document.getElementById("servidor").style.fontSize=tamanho+"px";
+            document.getElementById("titulo").style.fontSize=tamanho+"px";
+            document.getElementById("logo").style.width =img+"px";
+        }
+        function aumentar(){
+            img = img+10;
+            tamanho++;
+            tamanho2++;
+            document.getElementById("texto__relatorio").style.fontSize=tamanho+"px";
+            document.getElementById("data").style.fontSize=tamanho+"px";
+            document.getElementById("assinatura").style.fontSize=tamanho+"px";
+            document.getElementById("cabecalho__info").style.fontSize=tamanho2+"px";
+            document.getElementById("servidor").style.fontSize=tamanho+"px";
+            document.getElementById("titulo").style.fontSize=tamanho+"px";
+            document.getElementById("logo").style.width =img+"px";
+        }
+
+
+        function makePDF() {
+            var quotes = document.getElementById('texto');
+
+            html2canvas(quotes, {
+                onrendered: function(canvas) {
+                    var pdf = new jsPDF('p', 'pt', 'a4');
+
+                    // // Adicionando um cabeçalho em todas as páginas
+                    // pdf.setDrawColor(0);
+                    // pdf.setLineWidth(0.1);
+                    // pdf.setFontSize(10);
+                    // pdf.setFontStyle('normal');
+                    // pdf.text('Cabeçalho da Página', pdf.internal.pageSize.getWidth() / 2, 10, { align: 'center' });
+
+                    // var totalHeight = canvas.height;
+                    // var totalPages = Math.ceil(totalHeight / pdf.internal.pageSize.getHeight());
+
+                     // Função para adicionar o rodapé personalizado
+                    function addFooter() {
+                        var pageCount = pdf.internal.getNumberOfPages(); // Obtém o número total de páginas
+                        var footerText = "Câmpus Universitário | Lavras | MG | CEP 37203-202\n(35) 3829.5150 | www.progepe.ufla.br | aposentadoria.progepe@ufla.br";
+                        var marginBottom = 20; // Margem inferior de 20 pixels
+                        var marginTop = 20; // Margem inferior de 20 pixels
+
+                        for (var i = 1; i <= pageCount; i++) {
+                            pdf.setPage(i);
+                            pdf.setFontSize(8);
+                            var marginTo
+                            p = 10; // Margem superior do rodapé
+                            var marginBottom = 20; // Margem inferior do rodapé
+                            pdf.text(footerText, pdf.internal.pageSize.getWidth() / 2, pdf.internal.pageSize.getHeight() - marginBottom, { align: 'center' });
+
+                            // Adiciona uma linha horizontal no início do rodapé
+                            pdf.setLineWidth(0.5);
+                            pdf.line(20, pdf.internal.pageSize.getHeight() - marginBottom - marginTop, pdf.internal.pageSize.getWidth() - 20, pdf.internal.pageSize.getHeight() - marginBottom - marginTop);
+
+
+                        }
+                    }
+
+                    var totalHeight = canvas.height;
+                    var totalPages = Math.ceil(totalHeight / pdf.internal.pageSize.getHeight());
+
+                    // Loop para dividir o conteúdo em páginas e criar o PDF
+                    for (var i = 0; i <= quotes.clientHeight / 980; i++) {
+                        var srcImg = canvas;
+                        var sX = 0;
+                        var sY = 980 * i;
+                        var sWidth = 900;
+                        var sHeight = 980;
+                        var dX = 0;
+                        var dY = 0;
+                        var dWidth = 900;
+                        var dHeight = 980;
+
+                        var onePageCanvas = document.createElement("canvas");
+                        onePageCanvas.setAttribute('width', 900);
+                        onePageCanvas.setAttribute('height', 980);
+                        var ctx = onePageCanvas.getContext('2d');
+                        ctx.drawImage(srcImg, sX, sY, sWidth, sHeight, dX, dY, dWidth, dHeight);
+
+                        var canvasDataURL = onePageCanvas.toDataURL("image/png", 1.0);
+
+                        var width = onePageCanvas.width;
+                        var height = onePageCanvas.clientHeight;
+
+                        if (i > 0) {
+                            pdf.addPage(612, 791);
+                        }
+                        pdf.setPage(i + 1);
+                        pdf.addImage(canvasDataURL, 'PNG', 20, 40, (width * .62), (height * .62));
+                    }
+
+                    // Chama a função para adicionar o rodapé personalizado em todas as páginas
+                    addFooter();
+                
+                    pdf.save('test.pdf');
+                }
+            });
+        }
+        function inicio(){
+            alert("passou")
+            sessionStorage.clear();
+           
+        }
+    </script>
+</body>
+</html>

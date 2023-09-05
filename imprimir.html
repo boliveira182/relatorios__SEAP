@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/limpaCSS.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./css/imprimir.css" media="screen" />
+
+    
+    <title>Relatórios - SEAP</title>
+	<link rel="icon" type="imagem/png" href="./img/aposentadoria.png" />
+    
+</head>
+<body>
+    <article id="texto" class="texto">
+        <header class="cabecalho">
+            <img id="logo" class="cabecalho__logo" src="./img/logo.ong.png" width="200">
+            <div id="cabecalho__info" class="cabecalho__info">
+                <p><strong>UNIVERSIDADE FEDERAL DE LAVRAS</strong></p>
+                <p><strong>Pró-Reitoria de Gestão de Pessoas - PROGEPE</strong></p>
+                <p>Coordenadoria Administração de Pessoal - CAPE</p>
+                <p>Setor de Aposentadorias e Pensões - SEAP</p>
+            </div>
+        </header>
+        <br/>
+        <hr>
+        <br/>
+        <h1 id="titulo">Relatório para Concessão de Abono de Permanência<h1>
+
+        <div id="servidor" class="servidor">
+            <p class="servidor__item">Assunto: <span id="assunto"></span></p>
+            <p class="servidor__item"><span class ="pronome"></span>: <span class="nomeUsuario"></span></p>
+            <p class="servidor__item">Matrícula SIAPE: <span id="siapeUsuario"></span></p>
+            <p class="servidor__item">Matrícula na origem: <span id="origemUsuario"></span></p>
+            <p class="servidor__item">Cargo: <span id="cargoUsuario"></span></p>
+        </div>
+
+        <div id="texto__relatorio" class="texto__relatorio">
+            <p>O presente relatório versa sobre a análise para a concessão do benefício Abono de Permanência, com base no que prevê o §19 do artigo 40 da Constituição Federal, o Art. 3º, §3º, Art. 8º e Art. 10, §5º da Emenda Constitucional nº 103, de 12/11/2019, transcritos abaixo:</p>
+
+            <h2 style="list-style-type: circle;" class="texto__relatorio__titulo">Constituição Federal de 1988</h2>
+            <blockquote>
+                <p>Art. 40 - O regime próprio de previdência social dos servidores titulares de cargos efetivos terá caráter contributivo e solidário, mediante contribuição do respectivo ente federativo, de servidores ativos, de aposentados e de pensionistas, observados critérios que preservem o equilíbrio financeiro e atuarial. (Redação dada pela Emenda Constitucional nº 103, de 2019).</p>
+                <p>[...]</p>
+                <p><strong>§ 19.</strong>Observados critérios a serem estabelecidos em lei do respectivo ente federativo, o servidor titular de cargo efetivo que tenha completado as exigências para a aposentadoria voluntária e que opte por permanecer em atividade poderá fazer jus a um abono de permanência equivalente, no máximo, ao valor da sua contribuição previdenciária, até completar a idade para aposentadoria compulsória. <a href="https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc103.htm">(Redação dada pela Emenda Constitucional nº 103, de 2019).</a></p>
+                <p>[...]</p>
+            </blockquote>
+
+            <h2 class="texto__relatorio__titulo">Emenda Constitucional nº 103/2019</h2>
+            <blockquote>
+                <p><strong>Art. 3º.</strong>A concessão de aposentadoria ao servidor público federal vinculado a regime próprio de previdência social e ao segurado do Regime Geral de Previdência Social e de pensão por morte aos respectivos dependentes será assegurada, a qualquer tempo, desde que tenham sido cumpridos os requisitos para obtenção desses benefícios até a data de entrada em vigor desta Emenda Constitucional, observados os critérios da legislação vigente na data em que foram atendidos os requisitos para a concessão da aposentadoria ou da pensão por morte.</p>
+                <p>[...]</p>
+                <p><strong>§ 3º.</strong>Até que entre em vigor lei federal de que trata o § 19 do art. 40 da Constituição Federal, o servidor de que trata o caput que tenha cumprido os requisitos para aposentadoria voluntária com base no disposto na alínea "a" do inciso III do § 1º do art. 40 da Constituição Federal, na redação vigente até a data de entrada em vigor desta Emenda Constitucional, no art. 2º, no § 1º do art. 3º ou no art. 6º da Emenda Constitucional nº 41, de 19 de dezembro de 2003, ou no art. 3º da Emenda Constitucional nº 47, de 5 de julho de 2005, que optar por permanecer em atividade fará jus a um abono de permanência equivalente ao valor da sua contribuição previdenciária, até completar a idade para aposentadoria compulsória.</p>
+                <p>[...]</p>
+                <p><strong>Art. 8º.</strong>Até que entre em vigor lei federal de que trata o § 19 do art. 40 da Constituição Federal, o servidor público federal que cumprir as exigências para a concessão da aposentadoria voluntária nos termos do disposto nos arts. 4º, 5º, 20, 21 e 22 e que optar por permanecer em atividade fará jus a um abono de permanência equivalente ao valor da sua contribuição previdenciária, até completar a idade para aposentadoria compulsória.</p>
+                <p>[...]</p>
+                <p><strong>Art. 10.</strong>Até que entre em vigor lei federal que discipline os benefícios do regime próprio de previdência social dos servidores da União, aplica-se o disposto neste artigo.</p>
+                <p>[...]</p>
+                <p><strong>§ 5º.</strong>Até que entre em vigor lei federal de que trata o § 19 do art. 40 da Constituição Federal, o servidor federal que cumprir as exigências para a concessão da aposentadoria voluntária nos termos do disposto neste artigo e que optar por permanecer em atividade fará jus a um abono de permanência equivalente ao valor da sua contribuição previdenciária, até completar a idade para aposentadoria compulsória.</p>
+                <p>[...]</p>
+            </blockquote>
+
+            <br>
+            <p>Tendo em vista tais prerrogativas, informamos que <span class="pronome2"></span> <strong>não cumpriu os requisitos para a aposentadoria voluntária</strong> com base no disposto <strong><span style="text-decoration: underline;">na alínea "a" do inciso III do § 1º do art. 40 da Constituição Federal,</span></strong> na redação vigente até a data de entrada em vigor da Emenda Constitucional nº 103/2019; <strong><span style="text-decoration: underline;">no art. 2º, no § 1º do art. 3º ou no art. 6º da Emenda Constitucional nº 41, de 19 de dezembro de 2003; ou c) no art. 3º da Emenda Constitucional nº 47, de 5 de julho de 2005 </span></strong>. Desta forma, <span class="pronome"></span> não adquiriu direito à concessão do Abono de Permanência, anteriormente à vigência da Emenda Constitucional nº 103/2019.</p>
+            <p>Igualmente, <span class="pronome"></span> <strong>não cumpriu as exigências para a concessão da aposentadoria voluntária</strong> nos termos do disposto nos Arts. 4º, 10 e 20 da Emenda Constitucional nº 103/2019, conforme transcritos abaixo:</p>
+            
+            <h2 class="texto__relatorio__titulo">Art. 4º da Emenda Constitucional nº 103/2019</h2>
+            <blockquote>
+                <br>
+                <p><strong>Art. 4º.</strong>O servidor público federal que tenha ingressado no serviço público em cargo efetivo até a data de entrada em vigor desta Emenda Constitucional poderá aposentar-se voluntariamente quando preencher, cumulativamente, os seguintes requisitos:</p>
+                
+                <ul>
+                    <li>I - 56 (cinquenta e seis) anos de idade, se mulher, e 61 (sessenta e um) anos de idade, se homem, observado o disposto no § 1º;</li>
+                    <li>II- 30 (trinta) anos de contribuição, se mulher, e 35 (trinta e cinco) anos de contribuição, se homem;</li>
+                    <li>III - 20 (vinte) anos de efetivo exercício no serviço público;</li>
+                    <li>IV - 5 (cinco) anos no cargo efetivo em que se der a aposentadoria; e</li>
+                    <li>V - somatório da idade e do tempo de contribuição, incluídas as frações, equivalente a 86 (oitenta e seis) pontos, se mulher, e 96 (noventa e seis) pontos, se homem, observado o disposto nos §§ 2º e 3º.;</li>
+                </ul>
+                <p><strong>§ 1º.</strong>A partir de 1º de janeiro de 2022, a idade mínima a que se refere o inciso I do caput será de 57 (cinquenta e sete) anos de idade, se mulher, e 62 (sessenta e dois) anos de idade, se homem.</p>
+                <p><strong>§ 2º.</strong>A partir de 1º de janeiro de 2020, a pontuação a que se refere o inciso V do caput será acrescida a cada ano de 1 (um) ponto, até atingir o limite de 100 (cem) pontos, se mulher, e de 105 (cento e cinco) pontos, se homem.</p>
+                <p>[...]</p>
+            </blockquote>
+
+            <h2 class="texto__relatorio__titulo">Art. 10 da Emenda Constitucional nº 103/2019</h2>
+            <blockquote >
+                <p><strong>Art. 10.</strong>Até que entre em vigor lei federal que discipline os benefícios do regime próprio de previdência social dos servidores da União, aplica-se o disposto neste artigo.</p>
+                <p><strong>§ 1º.</strong>1º Os servidores públicos federais serão aposentados:</p>
+                <p>I - voluntariamente, observados, cumulativamente, os seguintes requisitos:</p>
+                <p> a- 62 (sessenta e dois) anos de idade, se mulher, e 65 (sessenta e cinco) anos de idade, se homem; e</p>
+                <p> b- 25 (vinte e cinco) anos de contribuição, desde que cumprido o tempo mínimo de 10 (dez) anos de efetivo exercício no serviço público e de 5 (cinco) anos no cargo efetivo em que for concedida a aposentadoria;</p>
+                <p>[...]</p>
+            </blockquote>
+
+            <h2 class="texto__relatorio__titulo">Art. 20 da Emenda Constitucional nº 103/2019</h2>
+            <blockquote >
+                <p><strong>Art. 20.</strong>O segurado ou o servidor público federal que se tenha filiado ao Regime Geral de Previdência Social ou ingressado no serviço público em cargo efetivo até a data de entrada em vigor desta Emenda Constitucional poderá aposentar-se voluntariamente quando preencher, cumulativamente, os seguintes requisitos:</p>
+                <p>I - 57 (cinquenta e sete) anos de idade, se mulher, e 60 (sessenta) anos de idade, se homem;</p>
+                <p>II - 30 (trinta) anos de contribuição, se mulher, e 35 (trinta e cinco) anos de contribuição, se homem;</p>
+                <p> III - para os servidores públicos, 20 (vinte) anos de efetivo exercício no serviço público e 5 (cinco) anos no cargo efetivo em que se der a aposentadoria;</p>
+                <p> IV - período adicional de contribuição correspondente ao tempo que, na data de entrada em vigor desta Emenda Constitucional, faltaria para atingir o tempo mínimo de contribuição referido no inciso II.</p>
+                <p>[...]</p>
+            </blockquote>
+            <br>
+            <p>Desta forma, de acordo com os dados disponíveis no Sistema Integrado de Administração de Recursos Humanos (Siape), cujas telas compõem este processo, e com amparo na documentação contida na pasta funcional d<spam class="pronome"></spam>, bem como nas fundamentações legais transcritas acima, constatou-se que <spam class="pronome"></spam> <strong><spam class="nomeUsuario"></spam> não completou</strong> os requisitos exigidos pela legislação para a concessão do <strong>Abono de Permanência</strong>.</p>
+            <p style = "text-decoration:underline;">De acordo com a legislação vigente, estima-se que <spam class="pronome2"></spam> supracitado preencherá os requisitos para a aposentadoria em <spam id="dataBeneficio"></spam>, <strong>nos temos do <spam id="fundamento"></spam></strong>, momento em que poderá realizar uma nova solicitação.</p>
+        </div>
+        <br>
+        <p id="data"> Lavras, <span id="data__atual"></span>
+
+        <div class="assinatura">
+            <p><spam id="assinatura"></spam> </p>
+        </div>
+
+    </article>
+
+    <div class="ajuste">
+        <p>Ajustar tamanho da fonte:</p>
+        <div class="botoes__ajuste">
+            <button  onclick="diminuir()" ><img class="cursor" src="./img/minus.png" alt="" width="30"></button>|
+            <button  onclick="aumentar()" ><img class="cursor" src="./img/plus.png" alt="" width="30"></button>
+        </div>
+    </div>
+    
+    
+    <div class="botoes">
+        <button style="margin-top: 80px;" onclick="history.go(-1);" id="voltar">Voltar</button>
+        <button style="margin-top: 80px;" onclick="makePDF()" id="converter">Imprimir</button>
+        <button style="margin-top: 80px;" onclick="inicio()" id="inicio">Início</button>
+    </div>
+
+    
+    <button onclick="makePDF()">Gerar PDF</button>
+    <script src="./js/imprimir.js"></script>
+
+     <!-- Include necessary scripts -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+ 
+ 
+     <script>
+         tamanho = 20;
+         tamanho2 = 15;
+         img = 200;
+         function diminuir(){
+             img = img-10;
+             tamanho--;
+             tamanho2--;
+             document.getElementById("texto__relatorio").style.fontSize=tamanho+"px";
+             document.getElementById("data").style.fontSize=tamanho+"px";
+             document.getElementById("assinatura").style.fontSize=tamanho+"px";
+             document.getElementById("cabecalho__info").style.fontSize=tamanho2+"px";
+             document.getElementById("servidor").style.fontSize=tamanho+"px";
+             document.getElementById("titulo").style.fontSize=tamanho+"px";
+             document.getElementById("logo").style.width =img+"px";
+         }
+         function aumentar(){
+             img = img+10;
+             tamanho++;
+             tamanho2++;
+             document.getElementById("texto__relatorio").style.fontSize=tamanho+"px";
+             document.getElementById("data").style.fontSize=tamanho+"px";
+             document.getElementById("assinatura").style.fontSize=tamanho+"px";
+             document.getElementById("cabecalho__info").style.fontSize=tamanho2+"px";
+             document.getElementById("servidor").style.fontSize=tamanho+"px";
+             document.getElementById("titulo").style.fontSize=tamanho+"px";
+             document.getElementById("logo").style.width =img+"px";
+         }
+ 
+ 
+         function makePDF() {
+             var quotes = document.getElementById('texto');
+ 
+             html2canvas(quotes, {
+                 onrendered: function(canvas) {
+                     var pdf = new jsPDF('mm', 'pt', 'a4');
+ 
+                      // Função para adicionar o rodapé personalizado
+                     function addFooter() {
+                         var pageCount = pdf.internal.getNumberOfPages(); // Obtém o número total de páginas
+                         var footerText = "Câmpus Universitário | Lavras | MG | CEP 37203-202\n(35) 3829.5150 | www.progepe.ufla.br | aposentadoria.progepe@ufla.br";
+                         var marginBottom = 20; // Margem inferior de 20 pixels
+                         var marginTop = 20; // Margem inferior de 20 pixels
+ 
+                         for (var i = 1; i <= pageCount; i++) {
+                             pdf.setPage(i);
+                             pdf.setFontSize(8);
+                             pdf.text(footerText, pdf.internal.pageSize.getWidth() / 2, pdf.internal.pageSize.getHeight() - marginBottom, { align: 'center' });
+
+                             // Adiciona uma linha horizontal no início do rodapé
+                            pdf.setLineWidth(0.5);
+                            pdf.line(20, pdf.internal.pageSize.getHeight() - marginBottom - marginTop, pdf.internal.pageSize.getWidth() - 20, pdf.internal.pageSize.getHeight() - marginBottom - marginTop);
+        
+                         }
+                     }
+ 
+                    var totalHeight = canvas.height;
+                    var pageHeight = pdf.internal.pageSize.getHeight();
+                    var totalPages = Math.ceil(totalHeight / pageHeight);
+
+                      
+                     // Loop para dividir o conteúdo em páginas e criar o PDF
+                     for (var i = 0; i <  totalPages; i++) {
+                        var startY = i * pageHeight;
+                        var endY = (i + 1) * pageHeight;
+                        var pageCanvas = document.createElement("canvas");
+                        pageCanvas.setAttribute('width', canvas.width);
+                        pageCanvas.setAttribute('height', pageHeight);
+                        var ctx = pageCanvas.getContext('2d');
+                        ctx.drawImage(canvas, 0, startY, canvas.width, pageHeight, 0, 0, canvas.width, pageHeight);
+                        pdf.text('', 20, pageHeight - 20); // Adicione uma linha em branco no final da página
+
+                        if (i > 0) {
+                            pdf.addPage('a4', 'portrait');
+                        }
+
+                        var pageDataURL = pageCanvas.toDataURL("image/png", 1.0);
+                        pdf.addImage(pageDataURL, 'PNG', 20, 40, canvas.width * 0.62, pageHeight * 0.62);
+                     }
+ 
+                     // Chama a função para adicionar o rodapé personalizado em todas as páginas
+                     addFooter();
+                 
+                     pdf.save('test.pdf');
+                 }
+             });
+         }
+
+        function inicio(){
+            sessionStorage.clear();
+            window.location.href = "./index.html";
+        }
+    </script>
+</body>
+</html>
