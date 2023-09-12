@@ -84,7 +84,6 @@ blockquote {border-left:#009900 5px double;
 }
 
 .assinatura{
-    margin-top: 110px;
     font-weight: bold;
     display: flex;
     flex-direction: column;
